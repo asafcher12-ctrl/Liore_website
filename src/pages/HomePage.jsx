@@ -38,11 +38,11 @@ export default function HomePage() {
             <div>
               <div className="badge anim-up" style={{ marginBottom: 20 }}>מדריכת הורים מוסמכת מכון אדלר</div>
               <h1 className="anim-up d1" style={{ fontSize: 'clamp(36px,4.5vw,54px)', fontWeight: 700, color: '#2d1a1a', lineHeight: 1.15, marginBottom: 18 }}>
-                הורות<br /><span style={{ color: '#cf2e2e' }}>בעיניים טובות</span>
+                הורות<br /><span style={{ color: '#F5B3CD' }}>בעיניים טובות</span>
               </h1>
               <p className="anim-up d2" style={{ fontSize: 17, color: '#7a3a3a', lineHeight: 1.85, marginBottom: 30, maxWidth: 430 }}>
                 פשוט לעצור לרגע ולדבר. ייעוץ הורי שמביא חיבור, שקט וכלים שמתאימים בדיוק לכם.
-                <br /><em style={{ color: '#cf2e2e' }}>"כי גם מפגש אחד יכול לשנות את ההרגשה בבית."</em>
+                <br /><em style={{ color: '#F5B3CD' }}>"כי גם מפגש אחד יכול לשנות את ההרגשה בבית."</em>
               </p>
               <div className="anim-up d3" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                 <button className="btn-primary" onClick={() => go('/contact')}>לשיחת ייעוץ חינם ←</button>
@@ -149,7 +149,7 @@ export default function HomePage() {
       <section style={{ background: 'linear-gradient(135deg,#f78da7 0%,#cf2e2e 100%)', padding: '72px 24px', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 34, fontWeight: 700, color: '#fff', marginBottom: 10 }}>מוכנות להתחיל?</h2>
         <p style={{ fontSize: 16, color: 'rgba(255,255,255,.85)', marginBottom: 30 }}>שיחת ייעוץ ראשונה – בחינם, ללא התחייבות.</p>
-        <button className="card" style={{ background: '#fff', color: '#cf2e2e', padding: '15px 44px', borderRadius: 999, fontSize: 16, fontWeight: 700, border: 'none', cursor: 'pointer', fontFamily: 'Heebo, sans-serif' }} onClick={() => go('/contact')}>
+        <button className="card" style={{ background: '#fff', color: '#F5B3CD', padding: '15px 44px', borderRadius: 999, fontSize: 16, fontWeight: 700, border: 'none', cursor: 'pointer', fontFamily: 'Heebo, sans-serif' }} onClick={() => go('/contact')}>
           יצירת קשר ←
         </button>
       </section>
