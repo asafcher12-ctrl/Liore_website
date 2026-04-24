@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import Ic from './Ic'
+import logo from '../assets/logo.jpg'
 
 const NAV = [
   { path: '/',         label: 'בית' },
@@ -40,10 +41,9 @@ export default function Header() {
     }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Logo */}
-        <div onClick={() => go('/')} style={{ cursor: 'pointer', lineHeight: 1.2 }}>
-          <div className="logo-title">המגדלאור</div>
-          <div className="logo-sub">יוצרים הורות תאירה</div>
-        </div>
+        <button onClick={() => go('/')} style={{ cursor: 'pointer', border: 'none', background: 'none', padding: 0 }}>
+          <img src={logo} alt="לוגו" style={{ height: 48, width: 'auto' }} />
+        </button>
 
         {/* Desktop nav */}
         <nav style={{ display: 'flex', alignItems: 'center', gap: 28 }} className="hidden md:flex">
@@ -84,7 +84,7 @@ export default function Header() {
                 padding: '12px 14px', borderRadius: 12,
                 background: location.pathname === item.path ? 'rgba(247,141,167,.1)' : 'transparent',
                 border: 'none', cursor: 'pointer',
-                fontFamily: 'Heebo, sans-serif', fontSize: 15,
+                fontSize: 15,
                 color: location.pathname === item.path ? '#cf2e2e' : '#2d1a1a',
                 marginBottom: 4,
               }}

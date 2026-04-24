@@ -16,12 +16,36 @@ export function ContactForm({ title, subtitle }) {
     return e
   }
 
-  const submit = ev => {
+  const submit = async ev => {
     ev.preventDefault()
     const e = validate()
     if (Object.keys(e).length) { setErrs(e); return }
+    
     setLoading(true)
-    setTimeout(() => { setLoading(false); setSent(true) }, 1100)
+    try {
+      // הוחלף את xyzjkbdg בـ Form ID שלך מ-https://formspree.io
+      const response = await fetch('https://formspree.io/f/xyzjkbdg', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          message: form.message,
+        })
+      })
+      
+      if (response.ok) {
+        setLoading(false)
+        setSent(true)
+      } else {
+        setLoading(false)
+        setErrs({ submit: 'שגיאה בשליחה. אנא נסה שוב.' })
+      }
+    } catch (error) {
+      setLoading(false)
+      setErrs({ submit: 'שגיאה בשליחה. בדוק את החיבור לאינטרנט.' })
+    }
   }
 
   const set = (key, val) => { setForm({ ...form, [key]: val }); setErrs({ ...errs, [key]: '' }) }

@@ -12,8 +12,8 @@ export default {
         textmid:  '#7a3a3a',
       },
       fontFamily: {
-        body:    ['Heebo', 'sans-serif'],
-        display: ['Frank Ruhl Libre', 'serif'],
+        body:    ['IBM Plex Sans Hebrew', 'sans-serif'],
+        display: ['IBM Plex Sans Hebrew', 'sans-serif'],
       },
     },
   },

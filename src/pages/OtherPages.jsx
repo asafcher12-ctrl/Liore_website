@@ -20,7 +20,7 @@ export function AboutPage() {
           </div>
           <div>
             <span className="badge" style={{ marginBottom: 16, display: 'inline-block' }}>נעים להכיר</span>
-            <h1 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginBottom: 16 }}>
+            <h1 style={{ fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginBottom: 16 }}>
               ליאור מזומן<br /><span style={{ color: '#cf2e2e' }}>צ'רקס</span>
             </h1>
             <p style={{ fontSize: 16, color: '#7a3a3a', lineHeight: 1.85, marginBottom: 16 }}>
@@ -39,20 +39,20 @@ export function AboutPage() {
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <span className="badge">שיטת אדלר</span>
-            <h2 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 32, fontWeight: 700, color: '#2d1a1a', marginTop: 12 }}>עקרונות הבסיס</h2>
+            <h2 style={{ fontSize: 32, fontWeight: 700, color: '#2d1a1a', marginTop: 12 }}>עקרונות הבסיס</h2>
             <div className="section-line" />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 16 }}>
             {[
-              { n: '01', t: 'שייכות',          d: 'צורך בסיסי להרגיש שייכים למשפחה — לכל ילד יש מקום משמעותי.' },
-              { n: '02', t: 'תרומה',            d: 'ילדים שואפים לתרום — עידוד לתרום מחזק מסוגלות וערך עצמי.' },
+              { n: '01', t: 'שייכות',          d: 'צורך בסיסי להרגיש שייכים למשפחה - לכל ילד יש מקום משמעותי.' },
+              { n: '02', t: 'תרומה',            d: 'ילדים שואפים לתרום - עידוד לתרום מחזק מסוגלות וערך עצמי.' },
               { n: '03', t: 'אינטרס חברתי',    d: 'פיתוח רגישות לאחרים ורצון לדאוג לטובת הכלל.' },
               { n: '04', t: 'גבולות ברורים',   d: 'גבולות משמעותיים עם הסבר מספקים ביטחון ויציבות.' },
               { n: '05', t: 'עצמאות',           d: 'הזדמנויות לקבל החלטות ולקחת אחריות מפתחות ביטחון.' },
-              { n: '06', t: 'עידוד',            d: 'עידוד — ולא שבח — בונה ביטחון עמוק ואמיתי לאורך זמן.' },
+              { n: '06', t: 'עידוד',            d: 'עידוד - ולא שבח - בונה ביטחון עמוק ואמיתי לאורך זמן.' },
             ].map((p, i) => (
               <div key={i} style={{ display: 'flex', gap: 14, background: '#fff', borderRadius: 14, padding: '18px 20px', border: '1px solid rgba(247,141,167,.2)' }}>
-                <span style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 22, fontWeight: 700, color: 'rgba(247,141,167,.4)', minWidth: 36 }}>{p.n}</span>
+                <span style={{ fontSize: 22, fontWeight: 700, color: 'rgba(247,141,167,.4)', minWidth: 36 }}>{p.n}</span>
                 <div>
                   <h4 style={{ fontSize: 15, fontWeight: 600, color: '#2d1a1a', marginBottom: 4 }}>{p.t}</h4>
                   <p style={{ fontSize: 13, color: '#7a3a3a', lineHeight: 1.65 }}>{p.d}</p>
@@ -75,7 +75,7 @@ export function ServicesPage() {
       <section style={{ background: 'linear-gradient(180deg,#fff0f4 0%,#fff 100%)', padding: '80px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 24px' }}>
           <span className="badge" style={{ display: 'inline-block', marginBottom: 16 }}>הדרכת הורים</span>
-          <h1 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 42, fontWeight: 700, color: '#2d1a1a', marginBottom: 14 }}>
+          <h1 style={{ fontSize: 42, fontWeight: 700, color: '#2d1a1a', marginBottom: 14 }}>
             הורות היא מסע —<br /><span style={{ color: '#cf2e2e' }}>בוא נלך יחד</span>
           </h1>
           <p style={{ fontSize: 17, color: '#7a3a3a', lineHeight: 1.85, marginBottom: 30 }}>הדרכת הורים אישית שמותאמת בדיוק לצרכים שלכם ושל ילדכם.</p>
@@ -85,7 +85,7 @@ export function ServicesPage() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 40 }}>
-            <h2 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 32, fontWeight: 700, color: '#2d1a1a' }}>מה תקבלו?</h2>
+            <h2 style={{ fontSize: 32, fontWeight: 700, color: '#2d1a1a' }}>מה תקבלו?</h2>
             <div className="section-line" />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(340px,1fr))', gap: 14 }}>
@@ -104,7 +104,7 @@ export function ServicesPage() {
         <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 40 }}>
             <span className="badge">תמחור</span>
-            <h2 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 32, fontWeight: 700, color: '#2d1a1a', marginTop: 12 }}>אז כמה זה עולה?</h2>
+            <h2 style={{ fontSize: 32, fontWeight: 700, color: '#2d1a1a', marginTop: 12 }}>אז כמה זה עולה?</h2>
             <div className="section-line" />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 18 }}>
@@ -116,7 +116,7 @@ export function ServicesPage() {
               <div key={i} className={`card ${p.feat ? 'pricing-featured' : ''}`} style={{ padding: '36px 24px', textAlign: 'center', position: 'relative' }}>
                 {p.feat && <span className="pricing-badge">הכי פופולרי ✨</span>}
                 <h3 style={{ fontSize: 15, fontWeight: 600, color: '#7a3a3a', marginBottom: 10 }}>{p.t}</h3>
-                <div style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 38, fontWeight: 700, color: '#cf2e2e', marginBottom: 8 }}>{p.p}</div>
+                <div style={{ fontSize: 38, fontWeight: 700, color: '#cf2e2e', marginBottom: 8 }}>{p.p}</div>
                 <p style={{ fontSize: 13, color: '#7a3a3a', marginBottom: 24 }}>{p.s}</p>
                 <button className={p.feat ? 'btn-primary' : 'btn-outline'} style={{ width: '100%' }} onClick={() => go('/contact')}>קביעת פגישה ←</button>
               </div>
@@ -144,7 +144,7 @@ export function SleepPage() {
         <div style={{ maxWidth: 620, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ fontSize: 56, marginBottom: 14 }}>🌙</div>
           <span className="badge" style={{ display: 'inline-block', marginBottom: 16 }}>ייעוץ שינה</span>
-          <h1 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 42, fontWeight: 700, color: '#2d1a1a', marginBottom: 14 }}>
+          <h1 style={{ fontSize: 42, fontWeight: 700, color: '#2d1a1a', marginBottom: 14 }}>
             מתנה לכל<br /><span style={{ color: '#cf2e2e' }}>המשפחה</span>
           </h1>
           <p style={{ fontSize: 17, color: '#7a3a3a', lineHeight: 1.85, marginBottom: 30 }}>תהליך מותאם אישית לפי גיל הילד, השגרה המשפחתית והאתגרים הספציפיים שלכם.</p>
@@ -154,7 +154,7 @@ export function SleepPage() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div style={{ maxWidth: 800, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 40 }}>
-            <h2 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 32, fontWeight: 700, color: '#2d1a1a' }}>איך מתבצע התהליך?</h2>
+            <h2 style={{ fontSize: 32, fontWeight: 700, color: '#2d1a1a' }}>איך מתבצע התהליך?</h2>
             <div className="section-line" />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
@@ -179,25 +179,26 @@ export function SleepPage() {
 
 // ── BlogPage ───────────────────────────────────────────────
 export function BlogPage() {
+  const navigate = useNavigate()
   const posts = [
-    { e: '😴', cat: 'שינה',     t: 'למה הילד שלי לא מוכן לישון לבד?',                         d: 'מרץ 2025',     x: 'ילדים רבים מתנגדים לשינה עצמאית — זו צורך התפתחותי, לא בעיה התנהגותית.' },
-    { e: '😤', cat: 'גבולות',   t: 'כעס הורי: איך מגיבים ברוגע כשאנחנו עצמנו על הקצה?',       d: 'ינואר 2025',   x: 'כולנו מגיעים לנקודת הרתיחה. השאלה היא לא אם — אלא מה עושים איתה.' },
-    { e: '🧡', cat: 'קשר',      t: 'חמש דקות חיבור שמשנות הכל',                               d: 'נובמבר 2024',  x: 'לא צריך שעות — חמש דקות של נוכחות מלאה עושות יותר מכל שיעורי בית.' },
-    { e: '🎒', cat: 'גיל הגן',  t: 'גיל 3: המאפיינים, האתגרים וכיצד לשמור על הסבלנות',        d: 'ספטמבר 2024', x: 'גיל שלוש מביא איתו עצמאות ו"לא!" בשפע. הנה המדריך ההישרדותי.' },
+    { e: '😴', cat: 'שינה',     t: 'למה הילד שלי לא מוכן לישון לבד?',                         d: 'מרץ 2025',     x: 'ילדים רבים מתנגדים לשינה עצמאית — זו צורך התפתחותי, לא בעיה התנהגותית.', path: '/blog/sleep-alone' },
+    { e: '😤', cat: 'גבולות',   t: 'כעס הורי: איך מגיבים ברוגע כשאנחנו עצמנו על הקצה?',       d: 'ינואר 2025',   x: 'כולנו מגיעים לנקודת הרתיחה. השאלה היא לא אם — אלא מה עושים איתה.', path: '/blog/parental-anger' },
+    { e: '🧡', cat: 'קשר',      t: 'חמש דקות חיבור שמשנות הכל',                               d: 'נובמבר 2024',  x: 'לא צריך שעות — חמש דקות של נוכחות מלאה עושות יותר מכל שיעורי בית.', path: '/blog/connection' },
+    { e: '🎒', cat: 'גיל הגן',  t: 'גיל 3: המאפיינים, האתגרים וכיצד לשמור על הסבלנות',        d: 'ספטמבר 2024', x: 'גיל שלוש מביא איתו עצמאות ו"לא!" בשפע. הנה המדריך ההישרדותי.', path: '/blog/age-three' },
   ]
   return (
     <div className="page" style={{ paddingTop: 80 }}>
       <section style={{ background: '#fff0f4', padding: '60px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 600, margin: '0 auto', padding: '0 24px' }}>
           <span className="badge" style={{ display: 'inline-block', marginBottom: 14 }}>בלוג</span>
-          <h1 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginTop: 10 }}>מחשבות על הורות</h1>
+          <h1 style={{ fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginTop: 10 }}>מחשבות על הורות</h1>
           <div className="section-line" />
         </div>
       </section>
       <section style={{ background: '#fff', padding: '60px 0' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
           {posts.map((p, i) => (
-            <div key={i} className="card" style={{ overflow: 'hidden', cursor: 'pointer' }}>
+            <button key={i} onClick={() => { navigate(p.path); window.scrollTo({ top: 0, behavior: 'smooth' }) }} className="card" style={{ overflow: 'hidden', cursor: 'pointer', background: 'none', border: 'none', padding: 0, textAlign: 'left' }}>
               <div style={{ background: 'linear-gradient(135deg,#fff0f4,#fce4ec)', padding: 28, textAlign: 'center', fontSize: 44 }}>{p.e}</div>
               <div style={{ padding: 24 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
@@ -208,7 +209,7 @@ export function BlogPage() {
                 <p style={{ fontSize: 13, color: '#7a3a3a', lineHeight: 1.7 }}>{p.x}</p>
                 <div style={{ marginTop: 14, color: '#cf2e2e', fontSize: 13, fontWeight: 500 }}>קרא עוד ←</div>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </section>
@@ -229,7 +230,7 @@ export function ContactPage() {
       <section style={{ background: '#fff0f4', padding: '60px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 560, margin: '0 auto', padding: '0 24px' }}>
           <span className="badge" style={{ display: 'inline-block', marginBottom: 14 }}>צרי קשר</span>
-          <h1 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginTop: 10, marginBottom: 12 }}>בואו נדבר</h1>
+          <h1 style={{ fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginTop: 10, marginBottom: 12 }}>בואו נדבר</h1>
           <p style={{ fontSize: 16, color: '#7a3a3a', lineHeight: 1.75 }}>שיחת ייעוץ ראשונה — חינם וללא התחייבות.</p>
         </div>
       </section>
@@ -239,7 +240,7 @@ export function ContactPage() {
             <ContactForm title="השאירו פרטים" subtitle="אחזור אליכם תוך 24 שעות 💛" />
           </div>
           <div>
-            <h3 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 26, fontWeight: 700, color: '#2d1a1a', marginBottom: 8 }}>דרכי יצירת קשר</h3>
+            <h3 style={{ fontSize: 26, fontWeight: 700, color: '#2d1a1a', marginBottom: 8 }}>דרכי יצירת קשר</h3>
             <p style={{ fontSize: 14, color: '#7a3a3a', lineHeight: 1.75, marginBottom: 24 }}>מוזמנות לפנות בכל אמצעי שנוח לכן.</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {ways.map((w, i) => (

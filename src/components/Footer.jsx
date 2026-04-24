@@ -17,8 +17,8 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 40, marginBottom: 40 }}>
           {/* Brand */}
           <div>
-            <div style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 24, color: '#f78da7', fontWeight: 700, marginBottom: 6 }}>המגדלאור</div>
-            <div style={{ fontSize: 10, color: 'rgba(255,224,232,.5)', letterSpacing: '2px', marginBottom: 14 }}>יוצרים הורות תאירה</div>
+            <div style={{ fontSize: 24, color: '#f78da7', fontWeight: 700, marginBottom: 6 }}>המגדלאור</div>
+            <div style={{ fontSize: 10, color: 'rgba(255,224,232,.5)', letterSpacing: '2px', marginBottom: 14 }}>יוצרים הורות מאירה</div>
             <p style={{ fontSize: 14, color: 'rgba(255,224,232,.6)', lineHeight: 1.75 }}>
               מדריכת הורים, יועצת שינה ומנחת קבוצות מוסמכת. מלווה משפחות לבית שמח ומכיל.
             </p>
@@ -37,7 +37,7 @@ export default function Footer() {
               <button
                 key={item.path}
                 onClick={() => go(item.path)}
-                style={{ display: 'block', textAlign: 'right', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'Heebo, sans-serif', fontSize: 14, color: 'rgba(255,224,232,.55)', padding: '3px 0', transition: 'color .2s' }}
+                style={{ display: 'block', textAlign: 'right', background: 'none', border: 'none', cursor: 'pointer', fontSize: 14, color: 'rgba(255,224,232,.55)', padding: '3px 0', transition: 'color .2s' }}
                 onMouseEnter={e => e.target.style.color = '#f78da7'}
                 onMouseLeave={e => e.target.style.color = 'rgba(255,224,232,.55)'}
               >

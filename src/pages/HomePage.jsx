@@ -37,7 +37,7 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 60, alignItems: 'center' }}>
             <div>
               <div className="badge anim-up" style={{ marginBottom: 20 }}>מדריכת הורים מוסמכת מכון אדלר</div>
-              <h1 className="anim-up d1" style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 'clamp(36px,4.5vw,54px)', fontWeight: 700, color: '#2d1a1a', lineHeight: 1.15, marginBottom: 18 }}>
+              <h1 className="anim-up d1" style={{ fontSize: 'clamp(36px,4.5vw,54px)', fontWeight: 700, color: '#2d1a1a', lineHeight: 1.15, marginBottom: 18 }}>
                 הורות<br /><span style={{ color: '#cf2e2e' }}>בעיניים טובות</span>
               </h1>
               <p className="anim-up d2" style={{ fontSize: 17, color: '#7a3a3a', lineHeight: 1.85, marginBottom: 30, maxWidth: 430 }}>
@@ -51,7 +51,7 @@ export default function HomePage() {
               <div className="anim-up d4" style={{ display: 'flex', gap: 32, marginTop: 36 }}>
                 {[{ n: '200+', l: 'משפחות ליוויתי' }, { n: '5+', l: 'שנות ניסיון' }, { n: '98%', l: 'שביעות רצון' }].map(s => (
                   <div key={s.l}>
-                    <div style={{ fontSize: 28, fontWeight: 700, color: '#f78da7', fontFamily: 'Frank Ruhl Libre, serif' }}>{s.n}</div>
+                    <div style={{ fontSize: 28, fontWeight: 700, color: '#f78da7' }}>{s.n}</div>
                     <div style={{ fontSize: 12, color: '#7a3a3a' }}>{s.l}</div>
                   </div>
                 ))}
@@ -79,7 +79,7 @@ export default function HomePage() {
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <span className="badge">השירותים שלי</span>
-            <h2 style={{ fontFamily: 'Frank Ruhl Libre, serif', fontSize: 34, fontWeight: 700, color: '#2d1a1a', marginTop: 12 }}>כי אין חוברת הפעלה להורות</h2>
+            <h2 style={{ fontSize: 34, fontWeight: 700, color: '#2d1a1a', marginTop: 12 }}>כי אין חוברת הפעלה להורות</h2>
             <div className="section-line" />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 20 }}>
