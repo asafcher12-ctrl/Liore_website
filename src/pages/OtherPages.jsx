@@ -21,7 +21,7 @@ export function AboutPage() {
           <div>
             <span className="badge" style={{ marginBottom: 16, display: 'inline-block' }}>נעים להכיר</span>
             <h1 style={{ fontSize: 40, fontWeight: 700, color: '#2d1a1a', marginBottom: 16 }}>
-              ליאור מזומן<br /><span style={{ color: '#cf2e2e' }}>צ'רקס</span>
+              ליאור מזומן<br /><span style={{ color: '#F5B3CD' }}>צ'רקס</span>
             </h1>
             <p style={{ fontSize: 16, color: '#7a3a3a', lineHeight: 1.85, marginBottom: 16 }}>
               אמא לשלושה מתוקים – דניאל (7), עידו (5), ושי (3). מדריכת הורים, יועצת שינה, ומנחת קבוצות מוסמכת להורים וילדים.
