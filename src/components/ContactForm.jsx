@@ -6,6 +6,7 @@ export function ContactForm({ title, subtitle }) {
   const [sent, setSent]       = useState(false)
   const [loading, setLoading] = useState(false)
   const [errs, setErrs]       = useState({})
+  const [submitMessage, setSubmitMessage] = useState(null)
 
   const validate = () => {
     const e = {}
@@ -22,9 +23,10 @@ export function ContactForm({ title, subtitle }) {
     if (Object.keys(e).length) { setErrs(e); return }
     
     setLoading(true)
+    setSubmitMessage(null)
     try {
       // הוחלף את xyzjkbdg בـ Form ID שלך מ-https://formspree.io
-      const response = await fetch('https://formspree.io/f/xyzjkbdg', {
+      const response = await fetch('https://formspree.io/f/xkokywrz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -37,14 +39,17 @@ export function ContactForm({ title, subtitle }) {
       
       if (response.ok) {
         setLoading(false)
+        setSubmitMessage({ type: 'success', text: '✅ הטופס נשלח בהצלחה! אחזור אליך תוך 24 שעות 💛' })
         setSent(true)
+        setForm({ name: '', phone: '', email: '', message: '' })
+        setTimeout(() => setSent(false), 5000)
       } else {
         setLoading(false)
-        setErrs({ submit: 'שגיאה בשליחה. אנא נסה שוב.' })
+        setSubmitMessage({ type: 'error', text: '❌ שגיאה בשליחה. אנא נסה שוב.' })
       }
     } catch (error) {
       setLoading(false)
-      setErrs({ submit: 'שגיאה בשליחה. בדוק את החיבור לאינטרנט.' })
+      setSubmitMessage({ type: 'error', text: '❌ שגיאה בשליחה. בדוק את החיבור לאינטרנט.' })
     }
   }
 
@@ -82,6 +87,22 @@ export function ContactForm({ title, subtitle }) {
         <button type="submit" className="btn-primary" disabled={loading} style={{ opacity: loading ? .7 : 1 }}>
           {loading ? '⏳ שולח...' : 'שליחה ←'}
         </button>
+        
+        {/* הודעת הצלחה/שגיאה */}
+        {submitMessage && (
+          <div style={{
+            padding: 14,
+            borderRadius: 10,
+            fontSize: 14,
+            fontWeight: 500,
+            textAlign: 'center',
+            background: submitMessage.type === 'success' ? 'rgba(79, 184, 96, 0.1)' : 'rgba(207, 46, 46, 0.1)',
+            color: submitMessage.type === 'success' ? '#4fb860' : '#cf2e2e',
+            border: `1px solid ${submitMessage.type === 'success' ? 'rgba(79, 184, 96, 0.3)' : 'rgba(207, 46, 46, 0.3)'}`
+          }}>
+            {submitMessage.text}
+          </div>
+        )}
       </form>
     </div>
   )
