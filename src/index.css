@@ -6,11 +6,11 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Heebo', sans-serif; background: #ffffff; color: #2d1a1a; direction: rtl; }
+body { font-family: 'Heebo', sans-serif; background: #ffffff; color: #3C3C3B; direction: rtl; }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #fff0f4; }
-::-webkit-scrollbar-thumb { background: #f78da7; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #FDF1F6; }
+::-webkit-scrollbar-thumb { background: #F5B3CD; border-radius: 3px; }
 
 @keyframes fadeUp   { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn   { from { opacity: 0; } to { opacity: 1; } }
@@ -27,25 +27,25 @@ body { font-family: 'Heebo', sans-serif; background: #ffffff; color: #2d1a1a; di
 
 /* ── Nav link ── */
 .nav-link { position: relative; transition: color .2s; background: none; border: none; cursor: pointer; font-family: 'Heebo', sans-serif; }
-.nav-link::after { content: ''; position: absolute; bottom: -3px; right: 0; width: 0; height: 2px; background: #f78da7; border-radius: 1px; transition: width .25s; }
+.nav-link::after { content: ''; position: absolute; bottom: -3px; right: 0; width: 0; height: 2px; background: #F5B3CD; border-radius: 1px; transition: width .25s; }
 .nav-link:hover::after, .nav-link.act::after { width: 100%; }
-.nav-link:hover, .nav-link.act { color: #cf2e2e; }
+.nav-link:hover, .nav-link.act { color: #A96A83; }
 
 /* ── Buttons ── */
 .btn-primary {
-  background: linear-gradient(135deg, #f78da7 0%, #cf2e2e 100%);
+  background: linear-gradient(135deg, #F5B3CD 0%, #A96A83 100%);
   color: #fff; padding: 13px 34px; border-radius: 999px;
   font-size: 15px; font-weight: 600; border: none; cursor: pointer;
   transition: transform .2s, box-shadow .2s;
   font-family: 'Heebo', sans-serif; letter-spacing: .3px; display: inline-block;
 }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(207,46,46,.35); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(169, 106, 131, 0.35); }
 .btn-primary:active { transform: translateY(0); }
 
 .btn-outline {
-  background: transparent; color: #cf2e2e;
+  background: transparent; color: #A96A83;
   padding: 11px 30px; border-radius: 999px;
-  font-size: 14px; font-weight: 500; border: 2px solid #f78da7;
+  font-size: 14px; font-weight: 500; border: 2px solid #F5B3CD;
   cursor: pointer; transition: background .2s, color .2s;
   font-family: 'Heebo', sans-serif;
 }

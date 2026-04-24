@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary:  '#f78da7',
-        dark:     '#cf2e2e',
-        light:    '#fff0f4',
-        pink2:    '#fce4ec',
-        textdark: '#2d1a1a',
-        textmid:  '#7a3a3a',
+        primary:  '#F5B3CD',
+        dark:     '#A96A83',
+        light:    '#FDF1F6',
+        pink2:    '#FDF1F6',
+        textdark: '#3C3C3B',
+        textmid:  '#6B5B6B',
       },
       fontFamily: {
         body:    ['IBM Plex Sans Hebrew', 'sans-serif'],
