@@ -1,6 +1,7 @@
 {
   "name": "magdaalor",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -16,6 +17,7 @@
     "vite": "^5.1.4"
   },
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

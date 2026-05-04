@@ -51,7 +51,7 @@ export default function Footer() {
             <div style={{ fontSize: 15, fontWeight: 600, color: '#f78da7', marginBottom: 16 }}>יצירת קשר</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 20 }}>
               <a href="tel:+972501234567" style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,224,232,.6)', textDecoration: 'none', fontSize: 14 }}>
-                <Ic n="phone" s={14} c="#f78da7" /> 050-123-4567
+                <Ic n="phone" s={14} c="#f78da7" /> 054-539-7326
               </a>
               <a href="mailto:lior@liormezu.co.il" style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,224,232,.6)', textDecoration: 'none', fontSize: 14 }}>
                 <Ic n="mail" s={14} c="#f78da7" /> lior@liormezu.co.il
