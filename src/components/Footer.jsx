@@ -53,8 +53,8 @@ export default function Footer() {
               <a href="tel:+972501234567" style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,224,232,.6)', textDecoration: 'none', fontSize: 14 }}>
                 <Ic n="phone" s={14} c="#f78da7" /> 054-539-7326
               </a>
-              <a href="mailto:lior@liormezu.co.il" style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,224,232,.6)', textDecoration: 'none', fontSize: 14 }}>
-                <Ic n="mail" s={14} c="#f78da7" /> lior@liormezu.co.il
+              <a href="mailto:liore@mezuman.com" style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,224,232,.6)', textDecoration: 'none', fontSize: 14 }}>
+                <Ic n="mail" s={14} c="#f78da7" /> liore@mezuman.com
               </a>
             </div>
             <div style={{ display: 'flex', gap: 10 }}>

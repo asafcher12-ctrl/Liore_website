@@ -221,7 +221,7 @@ export function BlogPage() {
 export function ContactPage() {
   const ways = [
     { ic: 'phone', l: 'טלפון',       v: '054-539-7326',         h: 'tel:+972545397326' },
-    { ic: 'mail',  l: 'מייל',        v: 'lior@liormezu.co.il',  h: 'mailto:lior@liormezu.co.il' },
+    { ic: 'mail',  l: 'מייל',        v: 'liore@mezuman.com',  h: 'mailto:liore@mezuman.com' },
     { ic: 'ig',    l: 'אינסטגרם',   v: '@liore_mezuman',       h: 'https://instagram.com/liore_mezuman_cherckez' },
     { ic: 'fb',    l: 'פייסבוק',    v: 'liore.mezuman',        h: 'https://www.facebook.com/profile.php?id=61571783081389' },
   ]

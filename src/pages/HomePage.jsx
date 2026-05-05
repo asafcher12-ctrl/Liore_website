@@ -1,11 +1,14 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import Ic from '../components/Ic'
 import { ContactForm } from '../components/ContactForm'
 import liorPhoto from '../assets/lior_photo.webp'
 import handsImg  from '../assets/hands.jpg'
+import { seoData, organizationSchema, getBreadcrumbSchema } from '../utils/seo'
 
 export default function HomePage() {
   const navigate = useNavigate()
+  const location = useLocation()
   const go = path => { navigate(path); window.scrollTo({ top: 0, behavior: 'smooth' }) }
 
   const services = [
@@ -28,7 +31,28 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="page">
+    <>
+      <Helmet>
+        <title>{seoData.home.title}</title>
+        <meta name="description" content={seoData.home.description} />
+        <meta name="keywords" content={seoData.home.keywords} />
+        <link rel="canonical" href={seoData.home.url} />
+        <meta property="og:title" content={seoData.home.title} />
+        <meta property="og:description" content={seoData.home.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={seoData.home.url} />
+        <meta property="og:locale" content="he_IL" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seoData.home.title} />
+        <meta name="twitter:description" content={seoData.home.description} />
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(getBreadcrumbSchema(location.pathname))}
+        </script>
+      </Helmet>
+      <div className="page">
       {/* ── HERO ── */}
       <section className="hero-bg" style={{ paddingTop: 80, minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
         <img src={handsImg} className="hero-bg-img" alt="" aria-hidden />
@@ -167,5 +191,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    </>
   )
 }
